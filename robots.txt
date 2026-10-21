@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://watkinshomecompanion.com/sitemap.xml

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214 60" width="214" height="60" role="img" aria-label="WHC, Watkins Home Companion">
+  <!-- Translated 1:1 from WhcLogo / _WhcMarkPainter in the WHC Flutter app (76x60 mark, 8px gap, 34px/900 wordmark, 8px/700 subtitle). -->
+  <defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="76" y2="60"><stop offset="0" stop-color="#a257ff"/><stop offset=".5" stop-color="#26baff"/><stop offset="1" stop-color="#3159ec"/></linearGradient></defs>
+  <path d="M10 10 27 50 40 27 51 50 68 15" fill="none" stroke="url(#g)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="38" fill="#263b5b" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="-2">WHC</text>
+  <text x="84" y="52" fill="#263b5b" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="8" font-weight="700">WATKINS HOME COMPANION</text>
+</svg>
