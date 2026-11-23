@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com https://www.google.com; style-src 'self' 'unsafe-inline'; script-src 'self' https://*.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- Google tag (gtag.js) for Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-37F58RW5W6"></script>
+  <script src="/assets/js/analytics.js"></script>
   <title>Watkins Home Companion (WHC) — Your AI personal and home companion</title>
   <meta name="description" content="Watkins Home Companion (WHC) is a personal and home AI companion in development, designed to make your digital and real-world life simpler, smarter, and more connected.">
   <link rel="canonical" href="https://watkinshomecompanion.com/">

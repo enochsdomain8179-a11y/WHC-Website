@@ -128,4 +128,15 @@ GitHub Pages hosts only the website. It does not provide email, and the site cur
 
 ## Not included (by design)
 
-This version has no payment processing, customer accounts, contact-form backend, analytics, cookies, or third-party scripts. If you add analytics later, update the footer line "No accounts, payments, or personal data are collected on this website" and add a privacy policy.
+This version has no payment processing, customer accounts, or contact-form backend.
+
+## Analytics
+
+The site uses **Google Analytics 4** (Measurement ID `G-37F58RW5W6`). Google Analytics sets cookies and sends page-view data to Google. Each page loads it the same way, in its `<head>`:
+
+```html
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-37F58RW5W6"></script>
+<script src="/assets/js/analytics.js"></script>
+```
+
+`assets/js/analytics.js` holds the standard `gtag('config', ...)` setup. It is a separate file rather than inline code because each page's Content-Security-Policy blocks inline scripts. That policy allows Google's tag through `googletagmanager.com` (scripts) and `google-analytics.com` / `analytics.google.com` / `www.google.com` (data). If you add a page, copy the whole `<head>` from an existing page so it is tracked exactly once. Consider adding a privacy notice that mentions Google Analytics.
